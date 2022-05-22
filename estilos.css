@@ -1,12 +1,13 @@
 body {
         background-image: url('fondo.jpg');
-        margin: 150px;
+        margin: 75px;
 }
 h1 {
         color: blue;
 }
 p {
         color: black;
+ 	font-size: 15px;
 }
 image {
 	width:50px;
@@ -15,4 +16,34 @@ image {
 
 table, th, td {
   border: 1px solid black;
+}
+
+header, footer {
+  background-color: #666;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: left;
+  width: 50%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: white;
+  padding: 20px;
+}
+
+article {
+  float: right;
+  padding: 20px;
+  width: 40%;
+  background-color: white;
+  height: 300px; /* only for demonstration, should be removed */
 }
